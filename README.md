@@ -1,6 +1,21 @@
 Use this link to view README with backtesting images:
 https://github.com/Great-gla-27/Hybrid-Bot/blob/e951a11f70f98514a4fa303bfdd4c14375652578/.github/workflows/README.md
 
+## how to run 
+1. **Clone the repository** 
+   - Git clone `https://github.com/Great-gla-27/Hybrid-Bot.git`
+2. **Open in Visual Studio**
+   - Launch Visual Studio or the cTrader Code Editor.
+   - Open the `HybridTrendBot` project.
+3. **Build the project**
+   - Restore any NuGet packages.
+   - Build the solution.
+4. **Load to cTrader**
+   - Copy the compiled `.algo` or `.cbot` file into your cTrader Automate folder.
+   - In cTrader, navigate to **Automate** and add the HybridTrendBot.
+5. **Loading optimisation data and parameters**
+   -  You can also load the optimisation file `src/cTraderBot/NewBot3.1 - 31.05 2300 ` and the parameter file i used for **13/01/22 to 15/02/23** is `src/cTraderBot/NewBot3.1, EURUSD h12.cbotset`
+
 # Hybrid Trend-Following Bot for cTrader (cAlgo)
 
 This is a fully-automated trading robot developed in C# for the cTrader platform. The bot implements a hybrid trend-following strategy designed to operate on EUR/USD. It combines multiple indicators for signal confirmation with advanced risk and trade management features.

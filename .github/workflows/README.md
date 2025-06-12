@@ -39,7 +39,7 @@ The bot is highly configurable via the cAlgo interface. Key parameters include:
 
 * `ROI` : ![alt text](image.png)
 * `Trade states` : ![alt text](image-1.png)
-* `Parameters used`: [text](<src/cTraderBot/NewBot3.1, EURUSD h12.cbotset>)
+* `Parameters used`: [text]src/cTraderBot/NewBot3.1, EURUSD h12.cbotset
 
 This project was a really fun personal project to work on. I’m amazed by how much there is to explore in the fields of machine learning, AI, and algorithmic trading. Although the backtesting was run on the 12h timeframe, the parameters shown (e.g., RiskPerTradePercent = 1.7%, RR = 1.2, MaxLossDay = 4.4%, etc.) are not the only ones that can yield profit. They simply fit the trading style I prefer—moderate risk with a balanced reward ratio and a strong emphasis on trend confirmation.
 

@@ -1,0 +1,4744 @@
+
+<!DOCTYPE html>
+<html data-app-version="4.8.2">
+    <head>
+        <title>Historical Replay Report | cTrader</title>
+
+        <meta name="title" content="Historical Replay Report | cTrader">
+        <meta name="description" content="Backtesting report of a cBot from cTrader Algo: equity, trade statistics, parameters, used symbols, positions, orders, history.">
+
+        <meta name="author" content="Spotware Systems Ltd">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-eval' 'unsafe-inline' data: https: http: gap: ws: wss: blob: filesystem: file:">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <style type="text/css" data-fela-rehydration="58" data-fela-type="KEYFRAME">@-webkit-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-moz-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-webkit-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@-moz-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}</style><style type="text/css" data-fela-rehydration="58" data-fela-type="RULE">.spinner-a{position:absolute}.spinner-b{margin-left:auto}.spinner-c{margin-bottom:auto}.spinner-d{margin-right:auto}.spinner-e{margin-top:auto}.spinner-f{top:0}.spinner-g{bottom:0}.spinner-h{left:0}.spinner-i{right:0}.spinner-j{width:50px}.spinner-k{height:50px}.spinner-l{display:flex}.spinner-m{z-index:200}.spinner-n:before{content:""}.spinner-o:before{position:absolute}.spinner-p:before{border-style:solid}.spinner-q:before{border-top-left-radius:50%}.spinner-r:before{border-top-right-radius:50%}.spinner-s:before{border-bottom-right-radius:50%}.spinner-t:before{border-bottom-left-radius:50%}.spinner-u:before{display:inline-block}.spinner-v:before{box-sizing:border-box}.spinner-w:before{border-width:7px}.spinner-x:before{border-top-color:transparent}.spinner-y:before{border-left-color:transparent}.spinner-z:before{margin-top:7px}.spinner-ab:before{margin-right:7px}.spinner-ac:before{margin-bottom:7px}.spinner-ae:before{margin-left:7px}.spinner-af:before{width:calc(100% - 14px)}.spinner-ag:before{height:calc(100% - 14px)}.spinner-ah:before{border-right-color:#e75731}.spinner-ai:before{border-bottom-color:#e75731}.spinner-aj:before{animation-iteration-count:infinite}.spinner-ak:before{animation-timing-function:linear}.spinner-al:before{animation-duration:0.6s}.spinner-am:before{animation-name:spinner-k2}.spinner-an:after{content:""}.spinner-ao:after{position:absolute}.spinner-ap:after{border-style:solid}.spinner-aq:after{border-top-left-radius:50%}.spinner-ar:after{border-top-right-radius:50%}.spinner-as:after{border-bottom-right-radius:50%}.spinner-at:after{border-bottom-left-radius:50%}.spinner-au:after{display:inline-block}.spinner-av:after{box-sizing:border-box}.spinner-aw:after{border-width:7px}.spinner-ax:after{border-top-color:transparent}.spinner-ay:after{border-left-color:transparent}.spinner-az:after{width:100%}.spinner-ba:after{height:100%}.spinner-bb:after{border-right-color:rgba(36, 150, 73, 0.9)}.spinner-bc:after{border-bottom-color:rgba(36, 150, 73, 0.9)}.spinner-bd:after{animation-iteration-count:infinite}.spinner-be:after{animation-timing-function:linear}.spinner-bf:after{animation-duration:0.9s}.spinner-bg:after{animation-name:spinner-k1}</style>
+
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            #root {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <!-- startBacktestingReport -->
+        <script type="application/json" id="backtesting-report">{
+  "entries": {
+    "entriesByHours": {
+      "zero": {
+        "totalTrades": 0
+      },
+      "one": {
+        "totalTrades": 0
+      },
+      "two": {
+        "totalTrades": 50
+      },
+      "three": {
+        "totalTrades": 4
+      },
+      "four": {
+        "totalTrades": 4
+      },
+      "five": {
+        "totalTrades": 2
+      },
+      "six": {
+        "totalTrades": 3
+      },
+      "seven": {
+        "totalTrades": 3
+      },
+      "eight": {
+        "totalTrades": 4
+      },
+      "nine": {
+        "totalTrades": 9
+      },
+      "ten": {
+        "totalTrades": 3
+      },
+      "eleven": {
+        "totalTrades": 6
+      },
+      "twelve": {
+        "totalTrades": 5
+      },
+      "thirteen": {
+        "totalTrades": 5
+      },
+      "fourteen": {
+        "totalTrades": 5
+      },
+      "fifteen": {
+        "totalTrades": 12
+      },
+      "sixteen": {
+        "totalTrades": 1
+      },
+      "seventeen": {
+        "totalTrades": 1
+      },
+      "eighteen": {
+        "totalTrades": 3
+      },
+      "nineteen": {
+        "totalTrades": 0
+      },
+      "twenty": {
+        "totalTrades": 0
+      },
+      "twentyOne": {
+        "totalTrades": 0
+      },
+      "twentyTwo": {
+        "totalTrades": 0
+      },
+      "twentyThree": {
+        "totalTrades": 0
+      }
+    },
+    "entriesByWeekdays": {
+      "sunday": {
+        "totalTrades": 0
+      },
+      "monday": {
+        "totalTrades": 27
+      },
+      "tuesday": {
+        "totalTrades": 27
+      },
+      "wednesday": {
+        "totalTrades": 22
+      },
+      "thursday": {
+        "totalTrades": 22
+      },
+      "friday": {
+        "totalTrades": 22
+      },
+      "saturday": {
+        "totalTrades": 0
+      }
+    },
+    "entriesByMonths": {
+      "january": {
+        "totalTrades": 1
+      },
+      "february": {
+        "totalTrades": 2
+      },
+      "march": {
+        "totalTrades": 19
+      },
+      "april": {
+        "totalTrades": 14
+      },
+      "may": {
+        "totalTrades": 10
+      },
+      "june": {
+        "totalTrades": 8
+      },
+      "july": {
+        "totalTrades": 10
+      },
+      "august": {
+        "totalTrades": 10
+      },
+      "september": {
+        "totalTrades": 12
+      },
+      "october": {
+        "totalTrades": 19
+      },
+      "november": {
+        "totalTrades": 10
+      },
+      "december": {
+        "totalTrades": 5
+      }
+    }
+  },
+  "profitsLosses": {
+    "profitsLossesByHours": {
+      "zero": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "one": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "two": {
+        "winningTrades": 29,
+        "losingTrades": 21
+      },
+      "three": {
+        "winningTrades": 3,
+        "losingTrades": 1
+      },
+      "four": {
+        "winningTrades": 2,
+        "losingTrades": 2
+      },
+      "five": {
+        "winningTrades": 1,
+        "losingTrades": 1
+      },
+      "six": {
+        "winningTrades": 2,
+        "losingTrades": 1
+      },
+      "seven": {
+        "winningTrades": 2,
+        "losingTrades": 1
+      },
+      "eight": {
+        "winningTrades": 2,
+        "losingTrades": 2
+      },
+      "nine": {
+        "winningTrades": 5,
+        "losingTrades": 4
+      },
+      "ten": {
+        "winningTrades": 2,
+        "losingTrades": 1
+      },
+      "eleven": {
+        "winningTrades": 4,
+        "losingTrades": 2
+      },
+      "twelve": {
+        "winningTrades": 3,
+        "losingTrades": 2
+      },
+      "thirteen": {
+        "winningTrades": 4,
+        "losingTrades": 1
+      },
+      "fourteen": {
+        "winningTrades": 4,
+        "losingTrades": 1
+      },
+      "fifteen": {
+        "winningTrades": 6,
+        "losingTrades": 6
+      },
+      "sixteen": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "seventeen": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "eighteen": {
+        "winningTrades": 2,
+        "losingTrades": 1
+      },
+      "nineteen": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twenty": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyOne": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyTwo": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyThree": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      }
+    },
+    "profitsLossesByWeekdays": {
+      "sunday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "monday": {
+        "winningTrades": 19,
+        "losingTrades": 8
+      },
+      "tuesday": {
+        "winningTrades": 15,
+        "losingTrades": 12
+      },
+      "wednesday": {
+        "winningTrades": 10,
+        "losingTrades": 12
+      },
+      "thursday": {
+        "winningTrades": 11,
+        "losingTrades": 11
+      },
+      "friday": {
+        "winningTrades": 17,
+        "losingTrades": 5
+      },
+      "saturday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      }
+    },
+    "profitsLossesByMonth": {
+      "january": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "february": {
+        "winningTrades": 0,
+        "losingTrades": 2
+      },
+      "march": {
+        "winningTrades": 14,
+        "losingTrades": 5
+      },
+      "april": {
+        "winningTrades": 9,
+        "losingTrades": 5
+      },
+      "may": {
+        "winningTrades": 2,
+        "losingTrades": 8
+      },
+      "june": {
+        "winningTrades": 4,
+        "losingTrades": 4
+      },
+      "july": {
+        "winningTrades": 6,
+        "losingTrades": 4
+      },
+      "august": {
+        "winningTrades": 6,
+        "losingTrades": 4
+      },
+      "september": {
+        "winningTrades": 8,
+        "losingTrades": 4
+      },
+      "october": {
+        "winningTrades": 12,
+        "losingTrades": 7
+      },
+      "november": {
+        "winningTrades": 7,
+        "losingTrades": 3
+      },
+      "december": {
+        "winningTrades": 3,
+        "losingTrades": 2
+      }
+    }
+  },
+  "roi": {
+    "period1w": {
+      "totalRoi": 0,
+      "points": [
+        {
+          "timestamp": 1748026800000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1748217540000,
+          "roi": 0
+        }
+      ]
+    },
+    "period1m": {
+      "totalRoi": 0.14929464024585382,
+      "points": [
+        {
+          "timestamp": 1745866800000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1745884800000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1745971200000,
+          "roi": -0.40814857802596877
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 0.14929464024585382
+        },
+        {
+          "timestamp": 1748217540000,
+          "roi": 0.14929464024585382
+        }
+      ]
+    },
+    "period3m": {
+      "totalRoi": 14.333012559140016,
+      "points": [
+        {
+          "timestamp": 1740596400000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1740614400000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1740700800000,
+          "roi": -2.7139944078657
+        },
+        {
+          "timestamp": 1741651200000,
+          "roi": -1.4873608849521947
+        },
+        {
+          "timestamp": 1741737600000,
+          "roi": -0.5440050624635614
+        },
+        {
+          "timestamp": 1741824000000,
+          "roi": 1.624323599103931
+        },
+        {
+          "timestamp": 1741910400000,
+          "roi": 1.1034807059129959
+        },
+        {
+          "timestamp": 1741996800000,
+          "roi": 2.4499456781577345
+        },
+        {
+          "timestamp": 1742256000000,
+          "roi": 4.051194512401375
+        },
+        {
+          "timestamp": 1742342400000,
+          "roi": 5.146546607965861
+        },
+        {
+          "timestamp": 1742428800000,
+          "roi": 5.327735954766479
+        },
+        {
+          "timestamp": 1742515200000,
+          "roi": 2.7560359302058264
+        },
+        {
+          "timestamp": 1742947200000,
+          "roi": 1.9291901893791505
+        },
+        {
+          "timestamp": 1743120000000,
+          "roi": 1.1572344195079625
+        },
+        {
+          "timestamp": 1743206400000,
+          "roi": 1.8169629239223346
+        },
+        {
+          "timestamp": 1743465600000,
+          "roi": 1.052698742337915
+        },
+        {
+          "timestamp": 1743552000000,
+          "roi": -0.331175318392418
+        },
+        {
+          "timestamp": 1743638400000,
+          "roi": 1.3605370826330043
+        },
+        {
+          "timestamp": 1743724800000,
+          "roi": 2.110554345004455
+        },
+        {
+          "timestamp": 1744070400000,
+          "roi": 2.491812391673158
+        },
+        {
+          "timestamp": 1744156800000,
+          "roi": 2.127860418649661
+        },
+        {
+          "timestamp": 1744243200000,
+          "roi": -0.17402218498794128
+        },
+        {
+          "timestamp": 1744329600000,
+          "roi": 10.254023443611482
+        },
+        {
+          "timestamp": 1744761600000,
+          "roi": 8.003185016786015
+        },
+        {
+          "timestamp": 1744848000000,
+          "roi": 10.361793084038469
+        },
+        {
+          "timestamp": 1744934400000,
+          "roi": 10.594114012063557
+        },
+        {
+          "timestamp": 1745020800000,
+          "roi": 11.403129252770935
+        },
+        {
+          "timestamp": 1745625600000,
+          "roi": 11.7766957111529
+        },
+        {
+          "timestamp": 1745884800000,
+          "roi": 14.162573955058402
+        },
+        {
+          "timestamp": 1745971200000,
+          "roi": 13.696621032822986
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 14.333012559140016
+        },
+        {
+          "timestamp": 1748217540000,
+          "roi": 14.333012559140016
+        }
+      ]
+    },
+    "period6m": {
+      "totalRoi": 12.653800807984418,
+      "points": [
+        {
+          "timestamp": 1732647600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1732665600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1732752000000,
+          "roi": -3.137721642390677
+        },
+        {
+          "timestamp": 1732838400000,
+          "roi": -3.2875716631888237
+        },
+        {
+          "timestamp": 1733184000000,
+          "roi": -2.0497588189751483
+        },
+        {
+          "timestamp": 1733788800000,
+          "roi": -2.984254552124989
+        },
+        {
+          "timestamp": 1733875200000,
+          "roi": -2.1834181478709724
+        },
+        {
+          "timestamp": 1733961600000,
+          "roi": -0.3078815082490714
+        },
+        {
+          "timestamp": 1734134400000,
+          "roi": -1.0220804866853113
+        },
+        {
+          "timestamp": 1738368000000,
+          "roi": -0.3524920316820862
+        },
+        {
+          "timestamp": 1740614400000,
+          "roi": -1.4687024452250883
+        },
+        {
+          "timestamp": 1740700800000,
+          "roi": -4.142836350859192
+        },
+        {
+          "timestamp": 1741651200000,
+          "roi": -2.9342184244906684
+        },
+        {
+          "timestamp": 1741737600000,
+          "roi": -2.004717692034099
+        },
+        {
+          "timestamp": 1741824000000,
+          "roi": 0.13176467346043547
+        },
+        {
+          "timestamp": 1741910400000,
+          "roi": -0.3814285874224235
+        },
+        {
+          "timestamp": 1741996800000,
+          "roi": 0.945260820850857
+        },
+        {
+          "timestamp": 1742256000000,
+          "roi": 2.5229920743118233
+        },
+        {
+          "timestamp": 1742342400000,
+          "roi": 3.6022567068649294
+        },
+        {
+          "timestamp": 1742428800000,
+          "roi": 3.780784921298599
+        },
+        {
+          "timestamp": 1742515200000,
+          "roi": 1.246855517882523
+        },
+        {
+          "timestamp": 1742947200000,
+          "roi": 0.43215368066960813
+        },
+        {
+          "timestamp": 1743120000000,
+          "roi": -0.32846435593342554
+        },
+        {
+          "timestamp": 1743206400000,
+          "roi": 0.3215746998047656
+        },
+        {
+          "timestamp": 1743465600000,
+          "roi": -0.4314647150567437
+        },
+        {
+          "timestamp": 1743552000000,
+          "roi": -1.7950137836182947
+        },
+        {
+          "timestamp": 1743638400000,
+          "roi": -0.12814760399290898
+        },
+        {
+          "timestamp": 1743724800000,
+          "roi": 0.6108541365064817
+        },
+        {
+          "timestamp": 1744070400000,
+          "roi": 0.9865126369211441
+        },
+        {
+          "timestamp": 1744156800000,
+          "roi": 0.6279060354248881
+        },
+        {
+          "timestamp": 1744243200000,
+          "roi": -1.6401687621268775
+        },
+        {
+          "timestamp": 1744329600000,
+          "roi": 8.634719905336118
+        },
+        {
+          "timestamp": 1744761600000,
+          "roi": 6.416939597523502
+        },
+        {
+          "timestamp": 1744848000000,
+          "roi": 8.740906730418944
+        },
+        {
+          "timestamp": 1744934400000,
+          "roi": 8.969815555293357
+        },
+        {
+          "timestamp": 1745020800000,
+          "roi": 9.76694876937822
+        },
+        {
+          "timestamp": 1745625600000,
+          "roi": 10.13502864805139
+        },
+        {
+          "timestamp": 1745884800000,
+          "roi": 12.48586543984856
+        },
+        {
+          "timestamp": 1745971200000,
+          "roi": 12.026755979575613
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 12.653800807984418
+        },
+        {
+          "timestamp": 1748217540000,
+          "roi": 12.653800807984418
+        }
+      ]
+    },
+    "period1y": {
+      "totalRoi": 39.68894698173493,
+      "points": [
+        {
+          "timestamp": 1716836400000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1716854400000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1717027200000,
+          "roi": -1.60951355784509
+        },
+        {
+          "timestamp": 1717459200000,
+          "roi": 0.7209279477847854
+        },
+        {
+          "timestamp": 1718755200000,
+          "roi": 0.28106685803133286
+        },
+        {
+          "timestamp": 1718841600000,
+          "roi": 0.08564423257642238
+        },
+        {
+          "timestamp": 1718928000000,
+          "roi": 1.4093922463136626
+        },
+        {
+          "timestamp": 1719014400000,
+          "roi": 2.076712457498261
+        },
+        {
+          "timestamp": 1719360000000,
+          "roi": 1.6031062586498626
+        },
+        {
+          "timestamp": 1719446400000,
+          "roi": 1.9588181523057766
+        },
+        {
+          "timestamp": 1719619200000,
+          "roi": 1.4228475746236757
+        },
+        {
+          "timestamp": 1720569600000,
+          "roi": 1.2320168469253592
+        },
+        {
+          "timestamp": 1720656000000,
+          "roi": 1.6402685939822685
+        },
+        {
+          "timestamp": 1720742400000,
+          "roi": 3.9872622891998675
+        },
+        {
+          "timestamp": 1721174400000,
+          "roi": 4.736061988483948
+        },
+        {
+          "timestamp": 1721260800000,
+          "roi": 6.503195106532024
+        },
+        {
+          "timestamp": 1722038400000,
+          "roi": 6.235903941770473
+        },
+        {
+          "timestamp": 1722643200000,
+          "roi": 9.826661199104695
+        },
+        {
+          "timestamp": 1723075200000,
+          "roi": 9.281186460949655
+        },
+        {
+          "timestamp": 1723161600000,
+          "roi": 8.750021357663995
+        },
+        {
+          "timestamp": 1723248000000,
+          "roi": 8.736566029353982
+        },
+        {
+          "timestamp": 1723507200000,
+          "roi": 9.125702667145074
+        },
+        {
+          "timestamp": 1723852800000,
+          "roi": 10.497398636526734
+        },
+        {
+          "timestamp": 1724112000000,
+          "roi": 11.222170963828672
+        },
+        {
+          "timestamp": 1724457600000,
+          "roi": 12.868312915406571
+        },
+        {
+          "timestamp": 1724889600000,
+          "roi": 11.383421326908943
+        },
+        {
+          "timestamp": 1725494400000,
+          "roi": 11.274283663949975
+        },
+        {
+          "timestamp": 1725580800000,
+          "roi": 12.401541169033093
+        },
+        {
+          "timestamp": 1725667200000,
+          "roi": 12.512814598390484
+        },
+        {
+          "timestamp": 1725926400000,
+          "roi": 10.548763818408595
+        },
+        {
+          "timestamp": 1726185600000,
+          "roi": 10.588168708459346
+        },
+        {
+          "timestamp": 1726790400000,
+          "roi": 14.308566986177315
+        },
+        {
+          "timestamp": 1726876800000,
+          "roi": 14.510930852427089
+        },
+        {
+          "timestamp": 1727136000000,
+          "roi": 11.272895415791014
+        },
+        {
+          "timestamp": 1727222400000,
+          "roi": 14.010734361918434
+        },
+        {
+          "timestamp": 1727481600000,
+          "roi": 14.994361576708195
+        },
+        {
+          "timestamp": 1727740800000,
+          "roi": 11.688301980282612
+        },
+        {
+          "timestamp": 1728691200000,
+          "roi": 11.780460300374184
+        },
+        {
+          "timestamp": 1728950400000,
+          "roi": 12.478001606096328
+        },
+        {
+          "timestamp": 1729036800000,
+          "roi": 13.14788473695902
+        },
+        {
+          "timestamp": 1729123200000,
+          "roi": 13.915585968869074
+        },
+        {
+          "timestamp": 1729555200000,
+          "roi": 15.325618945102255
+        },
+        {
+          "timestamp": 1729641600000,
+          "roi": 16.118201855553853
+        },
+        {
+          "timestamp": 1729814400000,
+          "roi": 14.858526833769027
+        },
+        {
+          "timestamp": 1729900800000,
+          "roi": 15.7700719326123
+        },
+        {
+          "timestamp": 1730160000000,
+          "roi": 14.706887419481616
+        },
+        {
+          "timestamp": 1730246400000,
+          "roi": 14.651143916482987
+        },
+        {
+          "timestamp": 1730332800000,
+          "roi": 12.260580586737754
+        },
+        {
+          "timestamp": 1730419200000,
+          "roi": 10.94356023715551
+        },
+        {
+          "timestamp": 1730505600000,
+          "roi": 11.433505048951767
+        },
+        {
+          "timestamp": 1730937600000,
+          "roi": 17.511789430519254
+        },
+        {
+          "timestamp": 1731369600000,
+          "roi": 20.024411809933873
+        },
+        {
+          "timestamp": 1731974400000,
+          "roi": 16.92445367095529
+        },
+        {
+          "timestamp": 1732060800000,
+          "roi": 16.992691407384626
+        },
+        {
+          "timestamp": 1732147200000,
+          "roi": 19.99419071539631
+        },
+        {
+          "timestamp": 1732233600000,
+          "roi": 22.77997761716815
+        },
+        {
+          "timestamp": 1732665600000,
+          "roi": 23.998432347463574
+        },
+        {
+          "timestamp": 1732752000000,
+          "roi": 20.107706699472047
+        },
+        {
+          "timestamp": 1732838400000,
+          "roi": 19.921895022809995
+        },
+        {
+          "timestamp": 1733184000000,
+          "roi": 21.45676354503051
+        },
+        {
+          "timestamp": 1733788800000,
+          "roi": 20.298003485570767
+        },
+        {
+          "timestamp": 1733875200000,
+          "roi": 21.291028072513544
+        },
+        {
+          "timestamp": 1733961600000,
+          "roi": 23.616664103747
+        },
+        {
+          "timestamp": 1734134400000,
+          "roi": 22.73106856664446
+        },
+        {
+          "timestamp": 1738368000000,
+          "roi": 23.561347754028063
+        },
+        {
+          "timestamp": 1740614400000,
+          "roi": 22.1772643395356
+        },
+        {
+          "timestamp": 1740700800000,
+          "roi": 18.861380217677308
+        },
+        {
+          "timestamp": 1741651200000,
+          "roi": 20.3600474994447
+        },
+        {
+          "timestamp": 1741737600000,
+          "roi": 21.512613836349036
+        },
+        {
+          "timestamp": 1741824000000,
+          "roi": 24.16181847694227
+        },
+        {
+          "timestamp": 1741910400000,
+          "roi": 23.525466878534694
+        },
+        {
+          "timestamp": 1741996800000,
+          "roi": 25.170540946913405
+        },
+        {
+          "timestamp": 1742256000000,
+          "roi": 27.12690296786099
+        },
+        {
+          "timestamp": 1742342400000,
+          "roi": 28.46517419310745
+        },
+        {
+          "timestamp": 1742428800000,
+          "roi": 28.686546380303117
+        },
+        {
+          "timestamp": 1742515200000,
+          "roi": 25.544513643275753
+        },
+        {
+          "timestamp": 1742947200000,
+          "roi": 24.534296136825752
+        },
+        {
+          "timestamp": 1743120000000,
+          "roi": 23.591141695285934
+        },
+        {
+          "timestamp": 1743206400000,
+          "roi": 24.397179934047543
+        },
+        {
+          "timestamp": 1743465600000,
+          "roi": 23.46342286466076
+        },
+        {
+          "timestamp": 1743552000000,
+          "roi": 21.772643395356
+        },
+        {
+          "timestamp": 1743638400000,
+          "roi": 23.839531327421533
+        },
+        {
+          "timestamp": 1743724800000,
+          "roi": 24.755881900661247
+        },
+        {
+          "timestamp": 1744070400000,
+          "roi": 25.221692552155417
+        },
+        {
+          "timestamp": 1744156800000,
+          "roi": 24.777025988005544
+        },
+        {
+          "timestamp": 1744243200000,
+          "roi": 21.964648794573446
+        },
+        {
+          "timestamp": 1744329600000,
+          "roi": 34.70534966767475
+        },
+        {
+          "timestamp": 1744761600000,
+          "roi": 31.955336853076354
+        },
+        {
+          "timestamp": 1744848000000,
+          "roi": 34.837019666136996
+        },
+        {
+          "timestamp": 1744934400000,
+          "roi": 35.12086302048627
+        },
+        {
+          "timestamp": 1745020800000,
+          "roi": 36.10929570967246
+        },
+        {
+          "timestamp": 1745625600000,
+          "roi": 36.56570898901363
+        },
+        {
+          "timestamp": 1745884800000,
+          "roi": 39.48070975788953
+        },
+        {
+          "timestamp": 1745971200000,
+          "roi": 38.91142122439217
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 39.68894698173493
+        },
+        {
+          "timestamp": 1748217540000,
+          "roi": 39.68894698173493
+        }
+      ]
+    },
+    "periodAll": {
+      "totalRoi": 30.809200000000004,
+      "points": [
+        {
+          "timestamp": 1714521600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1714608000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1715299200000,
+          "roi": -1.798799999999992
+        },
+        {
+          "timestamp": 1716249600000,
+          "roi": -2.309400000000005
+        },
+        {
+          "timestamp": 1716336000000,
+          "roi": -2.555200000000004
+        },
+        {
+          "timestamp": 1716422400000,
+          "roi": -4.470100000000002
+        },
+        {
+          "timestamp": 1716508800000,
+          "roi": -6.219699999999993
+        },
+        {
+          "timestamp": 1716595200000,
+          "roi": -6.618099999999995
+        },
+        {
+          "timestamp": 1716854400000,
+          "roi": -6.3568000000000024
+        },
+        {
+          "timestamp": 1717027200000,
+          "roi": -7.863999999999996
+        },
+        {
+          "timestamp": 1717459200000,
+          "roi": -5.681700000000001
+        },
+        {
+          "timestamp": 1718755200000,
+          "roi": -6.093600000000006
+        },
+        {
+          "timestamp": 1718841600000,
+          "roi": -6.276599999999998
+        },
+        {
+          "timestamp": 1718928000000,
+          "roi": -5.037000000000007
+        },
+        {
+          "timestamp": 1719014400000,
+          "roi": -4.412099999999991
+        },
+        {
+          "timestamp": 1719360000000,
+          "roi": -4.855599999999995
+        },
+        {
+          "timestamp": 1719446400000,
+          "roi": -4.5225
+        },
+        {
+          "timestamp": 1719619200000,
+          "roi": -5.024400000000005
+        },
+        {
+          "timestamp": 1720569600000,
+          "roi": -5.203099999999996
+        },
+        {
+          "timestamp": 1720656000000,
+          "roi": -4.820799999999999
+        },
+        {
+          "timestamp": 1720742400000,
+          "roi": -2.6229999999999927
+        },
+        {
+          "timestamp": 1721174400000,
+          "roi": -1.921800000000003
+        },
+        {
+          "timestamp": 1721260800000,
+          "roi": -0.2670000000000073
+        },
+        {
+          "timestamp": 1722038400000,
+          "roi": -0.5172999999999957
+        },
+        {
+          "timestamp": 1722643200000,
+          "roi": 2.845200000000004
+        },
+        {
+          "timestamp": 1723075200000,
+          "roi": 2.3344000000000054
+        },
+        {
+          "timestamp": 1723161600000,
+          "roi": 1.8370000000000073
+        },
+        {
+          "timestamp": 1723248000000,
+          "roi": 1.8244000000000051
+        },
+        {
+          "timestamp": 1723507200000,
+          "roi": 2.188799999999992
+        },
+        {
+          "timestamp": 1723852800000,
+          "roi": 3.473299999999999
+        },
+        {
+          "timestamp": 1724112000000,
+          "roi": 4.152000000000007
+        },
+        {
+          "timestamp": 1724457600000,
+          "roi": 5.693500000000004
+        },
+        {
+          "timestamp": 1724889600000,
+          "roi": 4.302999999999993
+        },
+        {
+          "timestamp": 1725494400000,
+          "roi": 4.200799999999999
+        },
+        {
+          "timestamp": 1725580800000,
+          "roi": 5.256399999999994
+        },
+        {
+          "timestamp": 1725667200000,
+          "roi": 5.360599999999995
+        },
+        {
+          "timestamp": 1725926400000,
+          "roi": 3.521399999999994
+        },
+        {
+          "timestamp": 1726185600000,
+          "roi": 3.558299999999999
+        },
+        {
+          "timestamp": 1726790400000,
+          "roi": 7.042199999999993
+        },
+        {
+          "timestamp": 1726876800000,
+          "roi": 7.231700000000001
+        },
+        {
+          "timestamp": 1727136000000,
+          "roi": 4.199500000000008
+        },
+        {
+          "timestamp": 1727222400000,
+          "roi": 6.7633
+        },
+        {
+          "timestamp": 1727481600000,
+          "roi": 7.6844000000000054
+        },
+        {
+          "timestamp": 1727740800000,
+          "roi": 4.588500000000003
+        },
+        {
+          "timestamp": 1728691200000,
+          "roi": 4.674799999999996
+        },
+        {
+          "timestamp": 1728950400000,
+          "roi": 5.327999999999992
+        },
+        {
+          "timestamp": 1729036800000,
+          "roi": 5.9553000000000065
+        },
+        {
+          "timestamp": 1729123200000,
+          "roi": 6.674200000000001
+        },
+        {
+          "timestamp": 1729555200000,
+          "roi": 7.99459999999999
+        },
+        {
+          "timestamp": 1729641600000,
+          "roi": 8.736800000000002
+        },
+        {
+          "timestamp": 1729814400000,
+          "roi": 7.557199999999993
+        },
+        {
+          "timestamp": 1729900800000,
+          "roi": 8.410799999999998
+        },
+        {
+          "timestamp": 1730160000000,
+          "roi": 7.415200000000004
+        },
+        {
+          "timestamp": 1730246400000,
+          "roi": 7.362999999999993
+        },
+        {
+          "timestamp": 1730332800000,
+          "roi": 5.124400000000005
+        },
+        {
+          "timestamp": 1730419200000,
+          "roi": 3.8911000000000056
+        },
+        {
+          "timestamp": 1730505600000,
+          "roi": 4.349899999999997
+        },
+        {
+          "timestamp": 1730937600000,
+          "roi": 10.041800000000004
+        },
+        {
+          "timestamp": 1731369600000,
+          "roi": 12.394699999999993
+        },
+        {
+          "timestamp": 1731974400000,
+          "roi": 9.491800000000003
+        },
+        {
+          "timestamp": 1732060800000,
+          "roi": 9.555699999999998
+        },
+        {
+          "timestamp": 1732147200000,
+          "roi": 12.366399999999993
+        },
+        {
+          "timestamp": 1732233600000,
+          "roi": 14.975100000000003
+        },
+        {
+          "timestamp": 1732665600000,
+          "roi": 16.116100000000007
+        },
+        {
+          "timestamp": 1732752000000,
+          "roi": 12.472700000000005
+        },
+        {
+          "timestamp": 1732838400000,
+          "roi": 12.298700000000009
+        },
+        {
+          "timestamp": 1733184000000,
+          "roi": 13.736000000000004
+        },
+        {
+          "timestamp": 1733788800000,
+          "roi": 12.650900000000002
+        },
+        {
+          "timestamp": 1733875200000,
+          "roi": 13.580799999999998
+        },
+        {
+          "timestamp": 1733961600000,
+          "roi": 15.758600000000007
+        },
+        {
+          "timestamp": 1734134400000,
+          "roi": 14.929300000000003
+        },
+        {
+          "timestamp": 1738368000000,
+          "roi": 15.706800000000005
+        },
+        {
+          "timestamp": 1740614400000,
+          "roi": 14.410699999999995
+        },
+        {
+          "timestamp": 1740700800000,
+          "roi": 11.305599999999995
+        },
+        {
+          "timestamp": 1741651200000,
+          "roi": 12.708999999999996
+        },
+        {
+          "timestamp": 1741737600000,
+          "roi": 13.788300000000001
+        },
+        {
+          "timestamp": 1741824000000,
+          "roi": 16.269099999999998
+        },
+        {
+          "timestamp": 1741910400000,
+          "roi": 15.673199999999998
+        },
+        {
+          "timestamp": 1741996800000,
+          "roi": 17.213700000000006
+        },
+        {
+          "timestamp": 1742256000000,
+          "roi": 19.045699999999997
+        },
+        {
+          "timestamp": 1742342400000,
+          "roi": 20.298899999999996
+        },
+        {
+          "timestamp": 1742428800000,
+          "roi": 20.506200000000007
+        },
+        {
+          "timestamp": 1742515200000,
+          "roi": 17.563899999999993
+        },
+        {
+          "timestamp": 1742947200000,
+          "roi": 16.617900000000006
+        },
+        {
+          "timestamp": 1743120000000,
+          "roi": 15.734699999999993
+        },
+        {
+          "timestamp": 1743206400000,
+          "roi": 16.489500000000007
+        },
+        {
+          "timestamp": 1743465600000,
+          "roi": 15.615100000000002
+        },
+        {
+          "timestamp": 1743552000000,
+          "roi": 14.031800000000002
+        },
+        {
+          "timestamp": 1743638400000,
+          "roi": 15.967299999999994
+        },
+        {
+          "timestamp": 1743724800000,
+          "roi": 16.82540000000001
+        },
+        {
+          "timestamp": 1744070400000,
+          "roi": 17.261599999999998
+        },
+        {
+          "timestamp": 1744156800000,
+          "roi": 16.845200000000006
+        },
+        {
+          "timestamp": 1744243200000,
+          "roi": 14.211599999999999
+        },
+        {
+          "timestamp": 1744329600000,
+          "roi": 26.1424
+        },
+        {
+          "timestamp": 1744761600000,
+          "roi": 23.567199999999993
+        },
+        {
+          "timestamp": 1744848000000,
+          "roi": 26.2657
+        },
+        {
+          "timestamp": 1744934400000,
+          "roi": 26.531499999999998
+        },
+        {
+          "timestamp": 1745020800000,
+          "roi": 27.45709999999999
+        },
+        {
+          "timestamp": 1745625600000,
+          "roi": 27.884500000000006
+        },
+        {
+          "timestamp": 1745884800000,
+          "roi": 30.614200000000004
+        },
+        {
+          "timestamp": 1745971200000,
+          "roi": 30.081100000000006
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 30.809200000000004
+        },
+        {
+          "timestamp": 1748217540000,
+          "roi": 30.809200000000004
+        }
+      ]
+    }
+  },
+  "main": {
+    "utcOffset": 0,
+    "language": "en",
+    "depositAsset": "EUR",
+    "depositAssetDigits": 2,
+    "period": "h6",
+    "symbol": "EURUSD",
+    "brokerTitle": "Spotware",
+    "cBotName": "NewBot3.0",
+    "roi": 30.81,
+    "netProfit": 3080.68,
+    "startingCapital": 10000,
+    "endingEquity": 13080.68,
+    "endingBalance": 13080.92,
+    "testingPeriod": {
+      "duration": "1y 24d",
+      "startDate": 1714521600000,
+      "endDate": 1748131200000,
+      "formatted": "1y 24d (01/05/2024 - 25/05/2025)"
+    },
+    "accountType": "hedging",
+    "accountLeverage": 100,
+    "data": {
+      "type": "m1BarsFromServer"
+    },
+    "spread": {
+      "type": "fixed",
+      "min": null,
+      "max": null,
+      "value": 1
+    },
+    "commissions": {
+      "type": "usdPerMillionUsdVolume",
+      "value": 30
+    },
+    "theme": "dark",
+    "titleKind": null,
+    "authorNickName": "great.oluosagie",
+    "authorLink": null,
+    "cBotLink": null,
+    "embedded": true
+  },
+  "equity": {
+    "points": [
+      {
+        "balance": 10000,
+        "minEquity": 10000,
+        "maxEquity": 10000,
+        "timestamp": 1714521600000
+      },
+      {
+        "balance": 9820.12,
+        "minEquity": 9827.73,
+        "maxEquity": 10008.16,
+        "timestamp": 1715262660000
+      },
+      {
+        "balance": 9769.06,
+        "minEquity": 9724.6,
+        "maxEquity": 9820.1,
+        "timestamp": 1716231600000
+      },
+      {
+        "balance": 9744.48,
+        "minEquity": 9713.49,
+        "maxEquity": 9846.79,
+        "timestamp": 1716318000000
+      },
+      {
+        "balance": 9576.25,
+        "minEquity": 9580.29,
+        "maxEquity": 9752.64,
+        "timestamp": 1716378420000
+      },
+      {
+        "balance": 9552.99,
+        "minEquity": 9541.32,
+        "maxEquity": 9665.65,
+        "timestamp": 1716404400000
+      },
+      {
+        "balance": 9378.03,
+        "minEquity": 9381.64,
+        "maxEquity": 9591.24,
+        "timestamp": 1716486180000
+      },
+      {
+        "balance": 9338.19,
+        "minEquity": 9323.84,
+        "maxEquity": 9378.05,
+        "timestamp": 1716577200000
+      },
+      {
+        "balance": 9364.32,
+        "minEquity": 9293.43,
+        "maxEquity": 9407.88,
+        "timestamp": 1716836400000
+      },
+      {
+        "balance": 9213.6,
+        "minEquity": 9210.94,
+        "maxEquity": 9448.37,
+        "timestamp": 1717009200000
+      },
+      {
+        "balance": 9431.83,
+        "minEquity": 9119.49,
+        "maxEquity": 9431.87,
+        "timestamp": 1717441200000
+      },
+      {
+        "balance": 9390.64,
+        "minEquity": 9388.42,
+        "maxEquity": 9431.87,
+        "timestamp": 1718737200000
+      },
+      {
+        "balance": 9372.34,
+        "minEquity": 9328.82,
+        "maxEquity": 9450.46,
+        "timestamp": 1718823600000
+      },
+      {
+        "balance": 9496.3,
+        "minEquity": 9360.34,
+        "maxEquity": 9525.51,
+        "timestamp": 1718910000000
+      },
+      {
+        "balance": 9558.79,
+        "minEquity": 9443.01,
+        "maxEquity": 9663.38,
+        "timestamp": 1718996400000
+      },
+      {
+        "balance": 9514.44,
+        "minEquity": 9509.52,
+        "maxEquity": 9624.42,
+        "timestamp": 1719342000000
+      },
+      {
+        "balance": 9547.75,
+        "minEquity": 9483.59,
+        "maxEquity": 9568.87,
+        "timestamp": 1719428400000
+      },
+      {
+        "balance": 9497.56,
+        "minEquity": 9442.38,
+        "maxEquity": 9582.41,
+        "timestamp": 1719601200000
+      },
+      {
+        "balance": 9479.69,
+        "minEquity": 9446.05,
+        "maxEquity": 9501.25,
+        "timestamp": 1720551600000
+      },
+      {
+        "balance": 9517.92,
+        "minEquity": 9463.63,
+        "maxEquity": 9535.45,
+        "timestamp": 1720638000000
+      },
+      {
+        "balance": 9581.31,
+        "minEquity": 9479.89,
+        "maxEquity": 9581.33,
+        "timestamp": 1720698720000
+      },
+      {
+        "balance": 9576.92,
+        "minEquity": 9573.8,
+        "maxEquity": 9581.33,
+        "timestamp": 1720700160000
+      },
+      {
+        "balance": 9737.7,
+        "minEquity": 9537.99,
+        "maxEquity": 9737.72,
+        "timestamp": 1720701060000
+      },
+      {
+        "balance": 9807.82,
+        "minEquity": 9730.19,
+        "maxEquity": 9814.57,
+        "timestamp": 1721156400000
+      },
+      {
+        "balance": 10000.92,
+        "minEquity": 9772.46,
+        "maxEquity": 10000.92,
+        "timestamp": 1721223540000
+      },
+      {
+        "balance": 10007.31,
+        "minEquity": 9993.39,
+        "maxEquity": 10007.31,
+        "timestamp": 1721223660000
+      },
+      {
+        "balance": 9973.3,
+        "minEquity": 9918.99,
+        "maxEquity": 10007.31,
+        "timestamp": 1721242800000
+      },
+      {
+        "balance": 9948.27,
+        "minEquity": 9883.64,
+        "maxEquity": 9998.98,
+        "timestamp": 1722020400000
+      },
+      {
+        "balance": 10284.52,
+        "minEquity": 9908.43,
+        "maxEquity": 10341.09,
+        "timestamp": 1722625200000
+      },
+      {
+        "balance": 10233.44,
+        "minEquity": 10213.71,
+        "maxEquity": 10295.84,
+        "timestamp": 1723057200000
+      },
+      {
+        "balance": 10183.7,
+        "minEquity": 10021.25,
+        "maxEquity": 10304.01,
+        "timestamp": 1723143600000
+      },
+      {
+        "balance": 10182.44,
+        "minEquity": 10137.57,
+        "maxEquity": 10230.48,
+        "timestamp": 1723230000000
+      },
+      {
+        "balance": 10218.88,
+        "minEquity": 10140.8,
+        "maxEquity": 10257.05,
+        "timestamp": 1723489200000
+      },
+      {
+        "balance": 10347.33,
+        "minEquity": 10211.37,
+        "maxEquity": 10347.37,
+        "timestamp": 1723834800000
+      },
+      {
+        "balance": 10415.2,
+        "minEquity": 10330.4,
+        "maxEquity": 10415.22,
+        "timestamp": 1724046300000
+      },
+      {
+        "balance": 10564.31,
+        "minEquity": 10354.26,
+        "maxEquity": 10564.31,
+        "timestamp": 1724421900000
+      },
+      {
+        "balance": 10569.35,
+        "minEquity": 10556.78,
+        "maxEquity": 10569.35,
+        "timestamp": 1724422140000
+      },
+      {
+        "balance": 10430.3,
+        "minEquity": 10383.19,
+        "maxEquity": 10622.86,
+        "timestamp": 1724871600000
+      },
+      {
+        "balance": 10420.08,
+        "minEquity": 10374.77,
+        "maxEquity": 10499.54,
+        "timestamp": 1725476400000
+      },
+      {
+        "balance": 10525.64,
+        "minEquity": 10394.62,
+        "maxEquity": 10593.9,
+        "timestamp": 1725562800000
+      },
+      {
+        "balance": 10536.06,
+        "minEquity": 10501.99,
+        "maxEquity": 10549.12,
+        "timestamp": 1725649200000
+      },
+      {
+        "balance": 10352.14,
+        "minEquity": 10314.48,
+        "maxEquity": 10536.1,
+        "timestamp": 1725908400000
+      },
+      {
+        "balance": 10355.83,
+        "minEquity": 10335.23,
+        "maxEquity": 10363.05,
+        "timestamp": 1726167600000
+      },
+      {
+        "balance": 10704.22,
+        "minEquity": 10348.34,
+        "maxEquity": 10762.61,
+        "timestamp": 1726772400000
+      },
+      {
+        "balance": 10723.17,
+        "minEquity": 10597.99,
+        "maxEquity": 10795.92,
+        "timestamp": 1726858800000
+      },
+      {
+        "balance": 10375.43,
+        "minEquity": 10387.14,
+        "maxEquity": 10753.38,
+        "timestamp": 1727079300000
+      },
+      {
+        "balance": 10419.95,
+        "minEquity": 10364.78,
+        "maxEquity": 10536.68,
+        "timestamp": 1727118000000
+      },
+      {
+        "balance": 10676.33,
+        "minEquity": 10395.39,
+        "maxEquity": 10678.6,
+        "timestamp": 1727204400000
+      },
+      {
+        "balance": 10768.44,
+        "minEquity": 10582.65,
+        "maxEquity": 10913.43,
+        "timestamp": 1727463600000
+      },
+      {
+        "balance": 10458.85,
+        "minEquity": 10468.73,
+        "maxEquity": 10768.46,
+        "timestamp": 1727711460000
+      },
+      {
+        "balance": 10467.48,
+        "minEquity": 10410.03,
+        "maxEquity": 10467.48,
+        "timestamp": 1728673200000
+      },
+      {
+        "balance": 10517.38,
+        "minEquity": 10400.69,
+        "maxEquity": 10517.38,
+        "timestamp": 1728906540000
+      },
+      {
+        "balance": 10532.27,
+        "minEquity": 10495.02,
+        "maxEquity": 10532.27,
+        "timestamp": 1728909540000
+      },
+      {
+        "balance": 10532.8,
+        "minEquity": 10517.99,
+        "maxEquity": 10532.8,
+        "timestamp": 1728912480000
+      },
+      {
+        "balance": 10564.28,
+        "minEquity": 10483.51,
+        "maxEquity": 10636.11,
+        "timestamp": 1728950580000
+      },
+      {
+        "balance": 10559.87,
+        "minEquity": 10541.02,
+        "maxEquity": 10564.28,
+        "timestamp": 1728980820000
+      },
+      {
+        "balance": 10587.35,
+        "minEquity": 10508.79,
+        "maxEquity": 10587.33,
+        "timestamp": 1728991560000
+      },
+      {
+        "balance": 10595.53,
+        "minEquity": 10549.26,
+        "maxEquity": 10595.49,
+        "timestamp": 1728993420000
+      },
+      {
+        "balance": 10667.42,
+        "minEquity": 10520.17,
+        "maxEquity": 10670.97,
+        "timestamp": 1729036800000
+      },
+      {
+        "balance": 10799.46,
+        "minEquity": 10648.16,
+        "maxEquity": 10799.42,
+        "timestamp": 1729524420000
+      },
+      {
+        "balance": 10797.3,
+        "minEquity": 10790.53,
+        "maxEquity": 10799.42,
+        "timestamp": 1729563300000
+      },
+      {
+        "balance": 10873.68,
+        "minEquity": 10779.84,
+        "maxEquity": 10873.64,
+        "timestamp": 1729602180000
+      },
+      {
+        "balance": 10755.72,
+        "minEquity": 10741.34,
+        "maxEquity": 10873.64,
+        "timestamp": 1729796400000
+      },
+      {
+        "balance": 10841.08,
+        "minEquity": 10678.14,
+        "maxEquity": 10857.67,
+        "timestamp": 1729882800000
+      },
+      {
+        "balance": 10741.52,
+        "minEquity": 10676.44,
+        "maxEquity": 10872.58,
+        "timestamp": 1730142000000
+      },
+      {
+        "balance": 10732.63,
+        "minEquity": 10688.19,
+        "maxEquity": 10938.64,
+        "timestamp": 1730227440000
+      },
+      {
+        "balance": 10736.3,
+        "minEquity": 10725.08,
+        "maxEquity": 10736.3,
+        "timestamp": 1730228400000
+      },
+      {
+        "balance": 10512.44,
+        "minEquity": 10515.56,
+        "maxEquity": 10783.51,
+        "timestamp": 1730312220000
+      },
+      {
+        "balance": 10389.11,
+        "minEquity": 10311.45,
+        "maxEquity": 10512.42,
+        "timestamp": 1730401200000
+      },
+      {
+        "balance": 10434.99,
+        "minEquity": 10350.14,
+        "maxEquity": 10455.62,
+        "timestamp": 1730487600000
+      },
+      {
+        "balance": 11004.18,
+        "minEquity": 10427.44,
+        "maxEquity": 10992.96,
+        "timestamp": 1730875260000
+      },
+      {
+        "balance": 11239.47,
+        "minEquity": 10975.09,
+        "maxEquity": 11239.45,
+        "timestamp": 1731323220000
+      },
+      {
+        "balance": 10949.18,
+        "minEquity": 10946.92,
+        "maxEquity": 11239.45,
+        "timestamp": 1731956400000
+      },
+      {
+        "balance": 10955.57,
+        "minEquity": 10910.21,
+        "maxEquity": 11240.1,
+        "timestamp": 1732042800000
+      },
+      {
+        "balance": 11236.64,
+        "minEquity": 10935.43,
+        "maxEquity": 11363.16,
+        "timestamp": 1732129200000
+      },
+      {
+        "balance": 11497.51,
+        "minEquity": 11189.58,
+        "maxEquity": 11604.29,
+        "timestamp": 1732215600000
+      },
+      {
+        "balance": 11611.61,
+        "minEquity": 11262.84,
+        "maxEquity": 11650.17,
+        "timestamp": 1732647600000
+      },
+      {
+        "balance": 11247.27,
+        "minEquity": 11152.97,
+        "maxEquity": 11657.45,
+        "timestamp": 1732734000000
+      },
+      {
+        "balance": 11229.87,
+        "minEquity": 11219.06,
+        "maxEquity": 11347.42,
+        "timestamp": 1732820400000
+      },
+      {
+        "balance": 11373.6,
+        "minEquity": 11160.79,
+        "maxEquity": 11498.31,
+        "timestamp": 1733166000000
+      },
+      {
+        "balance": 11265.09,
+        "minEquity": 11133.07,
+        "maxEquity": 11403.71,
+        "timestamp": 1733770800000
+      },
+      {
+        "balance": 11358.08,
+        "minEquity": 11247.63,
+        "maxEquity": 11476.53,
+        "timestamp": 1733857200000
+      },
+      {
+        "balance": 11575.86,
+        "minEquity": 11329.42,
+        "maxEquity": 11591.53,
+        "timestamp": 1733943600000
+      },
+      {
+        "balance": 11492.93,
+        "minEquity": 11365.87,
+        "maxEquity": 11575.82,
+        "timestamp": 1734116400000
+      },
+      {
+        "balance": 11570.68,
+        "minEquity": 11290.57,
+        "maxEquity": 11609.24,
+        "timestamp": 1738350000000
+      },
+      {
+        "balance": 11441.07,
+        "minEquity": 11382.22,
+        "maxEquity": 11597.2,
+        "timestamp": 1740596400000
+      },
+      {
+        "balance": 11130.56,
+        "minEquity": 11138.6,
+        "maxEquity": 11473.43,
+        "timestamp": 1740669060000
+      },
+      {
+        "balance": 11250.05,
+        "minEquity": 11122.97,
+        "maxEquity": 11249.99,
+        "timestamp": 1741598580000
+      },
+      {
+        "balance": 11266.76,
+        "minEquity": 11195.32,
+        "maxEquity": 11266.68,
+        "timestamp": 1741604880000
+      },
+      {
+        "balance": 11270.9,
+        "minEquity": 11255.99,
+        "maxEquity": 11270.8,
+        "timestamp": 1741615560000
+      },
+      {
+        "balance": 11365.51,
+        "minEquity": 11195.48,
+        "maxEquity": 11365.39,
+        "timestamp": 1741658340000
+      },
+      {
+        "balance": 11366.06,
+        "minEquity": 11354.42,
+        "maxEquity": 11365.94,
+        "timestamp": 1741658880000
+      },
+      {
+        "balance": 11370.2,
+        "minEquity": 11335.07,
+        "maxEquity": 11370.08,
+        "timestamp": 1741661880000
+      },
+      {
+        "balance": 11378.83,
+        "minEquity": 11361.65,
+        "maxEquity": 11378.71,
+        "timestamp": 1741662720000
+      },
+      {
+        "balance": 11626.91,
+        "minEquity": 11289.5,
+        "maxEquity": 11786.79,
+        "timestamp": 1741737600000
+      },
+      {
+        "balance": 11567.32,
+        "minEquity": 11562.28,
+        "maxEquity": 11676.28,
+        "timestamp": 1741892400000
+      },
+      {
+        "balance": 11721.37,
+        "minEquity": 11500.45,
+        "maxEquity": 11855.47,
+        "timestamp": 1741978800000
+      },
+      {
+        "balance": 11904.57,
+        "minEquity": 11652.7,
+        "maxEquity": 11921.55,
+        "timestamp": 1742238000000
+      },
+      {
+        "balance": 12029.89,
+        "minEquity": 11810.32,
+        "maxEquity": 12075.57,
+        "timestamp": 1742324400000
+      },
+      {
+        "balance": 12050.62,
+        "minEquity": 11841.37,
+        "maxEquity": 12094.95,
+        "timestamp": 1742410800000
+      },
+      {
+        "balance": 11723.08,
+        "minEquity": 11748.09,
+        "maxEquity": 12092.34,
+        "timestamp": 1742465880000
+      },
+      {
+        "balance": 11756.39,
+        "minEquity": 11611.3,
+        "maxEquity": 11786.79,
+        "timestamp": 1742497200000
+      },
+      {
+        "balance": 11661.79,
+        "minEquity": 11657.61,
+        "maxEquity": 11801.68,
+        "timestamp": 1742929200000
+      },
+      {
+        "balance": 11573.47,
+        "minEquity": 11565.68,
+        "maxEquity": 11697.64,
+        "timestamp": 1743102000000
+      },
+      {
+        "balance": 11648.95,
+        "minEquity": 11544.22,
+        "maxEquity": 11739.01,
+        "timestamp": 1743188400000
+      },
+      {
+        "balance": 11561.51,
+        "minEquity": 11430.29,
+        "maxEquity": 11708.12,
+        "timestamp": 1743447600000
+      },
+      {
+        "balance": 11403.18,
+        "minEquity": 11366.19,
+        "maxEquity": 11594.64,
+        "timestamp": 1743534000000
+      },
+      {
+        "balance": 11596.73,
+        "minEquity": 11369.87,
+        "maxEquity": 11678.21,
+        "timestamp": 1743620400000
+      },
+      {
+        "balance": 11682.54,
+        "minEquity": 11557.12,
+        "maxEquity": 11682.34,
+        "timestamp": 1743657840000
+      },
+      {
+        "balance": 11726.16,
+        "minEquity": 11588.17,
+        "maxEquity": 11801.81,
+        "timestamp": 1744052400000
+      },
+      {
+        "balance": 11684.52,
+        "minEquity": 11412.78,
+        "maxEquity": 11861.61,
+        "timestamp": 1744138800000
+      },
+      {
+        "balance": 11421.16,
+        "minEquity": 11209.54,
+        "maxEquity": 12008.9,
+        "timestamp": 1744225200000
+      },
+      {
+        "balance": 12614.24,
+        "minEquity": 11368.53,
+        "maxEquity": 12614.02,
+        "timestamp": 1744309500000
+      },
+      {
+        "balance": 12356.72,
+        "minEquity": 12325.51,
+        "maxEquity": 12614.02,
+        "timestamp": 1744743600000
+      },
+      {
+        "balance": 12626.57,
+        "minEquity": 12331.88,
+        "maxEquity": 12647.4,
+        "timestamp": 1744830000000
+      },
+      {
+        "balance": 12653.15,
+        "minEquity": 12505.68,
+        "maxEquity": 12718.42,
+        "timestamp": 1744916400000
+      },
+      {
+        "balance": 12745.71,
+        "minEquity": 12589.26,
+        "maxEquity": 12761.61,
+        "timestamp": 1745002800000
+      },
+      {
+        "balance": 12788.45,
+        "minEquity": 12692.59,
+        "maxEquity": 12826.79,
+        "timestamp": 1745607600000
+      },
+      {
+        "balance": 13061.42,
+        "minEquity": 12683.72,
+        "maxEquity": 13093.04,
+        "timestamp": 1745866800000
+      },
+      {
+        "balance": 13008.11,
+        "minEquity": 12954.91,
+        "maxEquity": 13175.28,
+        "timestamp": 1745953200000
+      },
+      {
+        "balance": 13080.92,
+        "minEquity": 12814.53,
+        "maxEquity": 13139.03,
+        "timestamp": 1748026800000
+      },
+      {
+        "balance": 13080.92,
+        "minEquity": 13080.68,
+        "maxEquity": 13080.68,
+        "timestamp": 1748217540000
+      }
+    ],
+    "maxBalanceDrawdownPercent": 7.863999999999996,
+    "maxEquityDrawdownPercent": 8.879454365237967,
+    "maxBalanceDrawdownAbsolute": 786.4,
+    "maxEquityDrawdownAbsolute": 888.67
+  },
+  "tradeStatistics": {
+    "netProfit": {
+      "all": 3080.92,
+      "long": 2083.24,
+      "short": 997.68
+    },
+    "profitFactor": {
+      "all": 1.56,
+      "long": 1.57,
+      "short": 1.56
+    },
+    "commissions": {
+      "all": -365.64,
+      "long": -234.56,
+      "short": -131.08
+    },
+    "swaps": {
+      "all": -22.88,
+      "long": -21.94,
+      "short": -0.94
+    },
+    "totalTrades": {
+      "all": 120,
+      "long": 77,
+      "short": 43
+    },
+    "winningTrades": {
+      "all": 72,
+      "long": 46,
+      "short": 26
+    },
+    "maxConsecutiveWinningTrades": {
+      "all": 8,
+      "long": 8,
+      "short": 5
+    },
+    "largestWinningTrade": {
+      "all": 1193.08,
+      "long": 1193.08,
+      "short": 569.19
+    },
+    "losingTrades": {
+      "all": 48,
+      "long": 31,
+      "short": 17
+    },
+    "maxConsecutiveLosingTrades": {
+      "all": 7,
+      "long": 6,
+      "short": 3
+    },
+    "largestLosingTrade": {
+      "all": -364.34,
+      "long": -347.74,
+      "short": -364.34
+    },
+    "averageTrade": {
+      "all": 25.67,
+      "long": 27.06,
+      "short": 23.2
+    }
+  },
+  "usedSymbols": [
+    {
+      "symbol": "EURUSD",
+      "period": "h6",
+      "swapTime": "20:59",
+      "baseAsset": "EUR",
+      "baseAssetDigits": 2,
+      "quoteAsset": "USD",
+      "quoteAssetDigits": 2,
+      "commissions": {
+        "type": "usdPerMillionUsdVolume",
+        "value": 30
+      },
+      "swapLong": -2.445,
+      "swapShort": -0.105,
+      "threeDaySwaps": "wednesday",
+      "weekendSwaps": false,
+      "swapPeriods": 24,
+      "gracePeriods": 0,
+      "digits": 5,
+      "lotSize": 100000,
+      "stepVolume": 1000,
+      "pipPosition": 4,
+      "swapCalculationType": "pips"
+    }
+  ],
+  "positions": {
+    "columns": [
+      "id",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "tp",
+      "sl",
+      "commissions",
+      "closingCommissions",
+      "swaps",
+      "created",
+      "label",
+      "comment",
+      "pips",
+      "gross",
+      "net"
+    ],
+    "items": [],
+    "marginUsed": 0,
+    "freeMargin": 13080.68,
+    "marginLevel": null,
+    "unrealizedNet": -0.24,
+    "unrealizedGross": 0
+  },
+  "orders": {
+    "columns": [
+      "id",
+      "direction",
+      "orderType",
+      "created",
+      "symbol",
+      "quantity",
+      "volume",
+      "submittedPrice",
+      "distance",
+      "tp",
+      "sl"
+    ],
+    "items": []
+  },
+  "history": {
+    "columns": [
+      "id",
+      "label",
+      "entryTime",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "commissions",
+      "swaps",
+      "closePrice",
+      "closeTime",
+      "net",
+      "pips",
+      "gross"
+    ],
+    "items": [
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 2,
+        "net": -179.88,
+        "gross": -176.84,
+        "entryTime": 1715243400000,
+        "closeTime": 1715262660000,
+        "entryPrice": 1.07285,
+        "closePrice": 1.07679,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9820.12,
+        "quantity": 0.51,
+        "pips": -39.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 4,
+        "net": -51.06,
+        "gross": -48.02,
+        "entryTime": 1716195600000,
+        "closeTime": 1716231600000,
+        "entryPrice": 1.08755,
+        "closePrice": 1.08648,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9769.06,
+        "quantity": 0.51,
+        "pips": -10.7
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 6,
+        "net": -24.58,
+        "gross": -21.54,
+        "entryTime": 1716256800000,
+        "closeTime": 1716318000000,
+        "entryPrice": 1.08567,
+        "closePrice": 1.08519,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9744.48,
+        "quantity": 0.51,
+        "pips": -4.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 8,
+        "net": -168.23,
+        "gross": -165.17,
+        "entryTime": 1716343200000,
+        "closeTime": 1716378420000,
+        "entryPrice": 1.08609,
+        "closePrice": 1.08241,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9576.25,
+        "quantity": 0.51,
+        "pips": -36.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 10,
+        "net": -23.26,
+        "gross": -20.2,
+        "entryTime": 1716378420000,
+        "closeTime": 1716404400000,
+        "entryPrice": 1.08259,
+        "closePrice": 1.08214,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9552.99,
+        "quantity": 0.51,
+        "pips": -4.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 12,
+        "net": -174.96,
+        "gross": -171.9,
+        "entryTime": 1716465480000,
+        "closeTime": 1716486180000,
+        "entryPrice": 1.08514,
+        "closePrice": 1.08131,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9378.03,
+        "quantity": 0.51,
+        "pips": -38.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 14,
+        "net": -39.84,
+        "gross": -36.8,
+        "entryTime": 1716568020000,
+        "closeTime": 1716577200000,
+        "entryPrice": 1.08577,
+        "closePrice": 1.08495,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9338.19,
+        "quantity": 0.51,
+        "pips": -8.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 16,
+        "net": 26.13,
+        "gross": 29.17,
+        "entryTime": 1716775200000,
+        "closeTime": 1716836400000,
+        "entryPrice": 1.08509,
+        "closePrice": 1.08574,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9364.32,
+        "quantity": 0.51,
+        "pips": 6.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 18,
+        "net": -150.72,
+        "gross": -147.66,
+        "entryTime": 1716973260000,
+        "closeTime": 1717009200000,
+        "entryPrice": 1.08388,
+        "closePrice": 1.08059,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9213.6,
+        "quantity": 0.51,
+        "pips": -32.9
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 20,
+        "net": 218.23,
+        "gross": 221.27,
+        "entryTime": 1717396440000,
+        "closeTime": 1717441200000,
+        "entryPrice": 1.0848,
+        "closePrice": 1.08973,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9431.83,
+        "quantity": 0.51,
+        "pips": 49.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 22,
+        "net": -41.19,
+        "gross": -38.15,
+        "entryTime": 1718735760000,
+        "closeTime": 1718737200000,
+        "entryPrice": 1.07323,
+        "closePrice": 1.07408,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9390.64,
+        "quantity": 0.51,
+        "pips": -8.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 24,
+        "net": -18.3,
+        "gross": -15.26,
+        "entryTime": 1718762400000,
+        "closeTime": 1718823600000,
+        "entryPrice": 1.07408,
+        "closePrice": 1.07442,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9372.34,
+        "quantity": 0.51,
+        "pips": -3.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 26,
+        "net": 123.96,
+        "gross": 127.02,
+        "entryTime": 1718860860000,
+        "closeTime": 1718910000000,
+        "entryPrice": 1.07396,
+        "closePrice": 1.07113,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9496.3,
+        "quantity": 0.51,
+        "pips": 28.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 28,
+        "net": 62.49,
+        "gross": 65.53,
+        "entryTime": 1718935200000,
+        "closeTime": 1718996400000,
+        "entryPrice": 1.07103,
+        "closePrice": 1.06957,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9558.79,
+        "quantity": 0.51,
+        "pips": 14.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 30,
+        "net": -44.35,
+        "gross": -41.29,
+        "entryTime": 1719318900000,
+        "closeTime": 1719342000000,
+        "entryPrice": 1.07078,
+        "closePrice": 1.0717,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9514.44,
+        "quantity": 0.51,
+        "pips": -9.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 32,
+        "net": 33.31,
+        "gross": 36.35,
+        "entryTime": 1719412440000,
+        "closeTime": 1719428400000,
+        "entryPrice": 1.0689,
+        "closePrice": 1.06809,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9547.75,
+        "quantity": 0.51,
+        "pips": 8.1
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 34,
+        "net": -50.19,
+        "gross": -47.13,
+        "entryTime": 1719559920000,
+        "closeTime": 1719601200000,
+        "entryPrice": 1.07022,
+        "closePrice": 1.07127,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9497.56,
+        "quantity": 0.51,
+        "pips": -10.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 36,
+        "net": -17.87,
+        "gross": -14.81,
+        "entryTime": 1720537200000,
+        "closeTime": 1720551600000,
+        "entryPrice": 1.08166,
+        "closePrice": 1.08133,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9479.69,
+        "quantity": 0.51,
+        "pips": -3.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 38,
+        "net": 38.23,
+        "gross": 41.29,
+        "entryTime": 1720576800000,
+        "closeTime": 1720638000000,
+        "entryPrice": 1.08156,
+        "closePrice": 1.08248,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9517.92,
+        "quantity": 0.51,
+        "pips": 9.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 40,
+        "net": 63.39,
+        "gross": 66.43,
+        "entryTime": 1720663200000,
+        "closeTime": 1720698720000,
+        "entryPrice": 1.08404,
+        "closePrice": 1.08552,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9581.31,
+        "quantity": 0.51,
+        "pips": 14.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 42,
+        "net": -4.39,
+        "gross": -1.35,
+        "entryTime": 1720700100000,
+        "closeTime": 1720700160000,
+        "entryPrice": 1.08554,
+        "closePrice": 1.08551,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9576.92,
+        "quantity": 0.51,
+        "pips": -0.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 44,
+        "net": 160.78,
+        "gross": 163.82,
+        "entryTime": 1720700220000,
+        "closeTime": 1720701060000,
+        "entryPrice": 1.08538,
+        "closePrice": 1.08903,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9737.7,
+        "quantity": 0.51,
+        "pips": 36.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 46,
+        "net": 70.12,
+        "gross": 73.16,
+        "entryTime": 1721142000000,
+        "closeTime": 1721156400000,
+        "entryPrice": 1.08795,
+        "closePrice": 1.08958,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9807.82,
+        "quantity": 0.51,
+        "pips": 16.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 48,
+        "net": 193.1,
+        "gross": 196.14,
+        "entryTime": 1721181600000,
+        "closeTime": 1721223540000,
+        "entryPrice": 1.09034,
+        "closePrice": 1.09471,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10000.92,
+        "quantity": 0.51,
+        "pips": 43.7
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 50,
+        "net": 6.39,
+        "gross": 9.43,
+        "entryTime": 1721223600000,
+        "closeTime": 1721223660000,
+        "entryPrice": 1.09437,
+        "closePrice": 1.09458,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10007.31,
+        "quantity": 0.51,
+        "pips": 2.1
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 52,
+        "net": -34.01,
+        "gross": -30.97,
+        "entryTime": 1721223720000,
+        "closeTime": 1721242800000,
+        "entryPrice": 1.09437,
+        "closePrice": 1.09368,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9973.3,
+        "quantity": 0.51,
+        "pips": -6.9
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 54,
+        "net": -25.03,
+        "gross": -21.99,
+        "entryTime": 1721971920000,
+        "closeTime": 1722020400000,
+        "entryPrice": 1.08616,
+        "closePrice": 1.08567,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 9948.27,
+        "quantity": 0.51,
+        "pips": -4.9
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 56,
+        "net": 336.25,
+        "gross": 339.31,
+        "entryTime": 1722598200000,
+        "closeTime": 1722625200000,
+        "entryPrice": 1.08374,
+        "closePrice": 1.0913,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10284.52,
+        "quantity": 0.51,
+        "pips": 75.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 58,
+        "net": -51.08,
+        "gross": -48.02,
+        "entryTime": 1723042800000,
+        "closeTime": 1723057200000,
+        "entryPrice": 1.09328,
+        "closePrice": 1.09221,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10233.44,
+        "quantity": 0.51,
+        "pips": -10.7
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 60,
+        "net": -49.74,
+        "gross": -46.68,
+        "entryTime": 1723082400000,
+        "closeTime": 1723143600000,
+        "entryPrice": 1.09287,
+        "closePrice": 1.09183,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10183.7,
+        "quantity": 0.51,
+        "pips": -10.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 62,
+        "net": -1.26,
+        "gross": 1.8,
+        "entryTime": 1723168800000,
+        "closeTime": 1723230000000,
+        "entryPrice": 1.0919,
+        "closePrice": 1.09194,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10182.44,
+        "quantity": 0.51,
+        "pips": 0.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 64,
+        "net": 36.44,
+        "gross": 39.5,
+        "entryTime": 1723428000000,
+        "closeTime": 1723489200000,
+        "entryPrice": 1.09216,
+        "closePrice": 1.09304,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10218.88,
+        "quantity": 0.51,
+        "pips": 8.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 66,
+        "net": 128.45,
+        "gross": 131.51,
+        "entryTime": 1723820400000,
+        "closeTime": 1723834800000,
+        "entryPrice": 1.09913,
+        "closePrice": 1.10206,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10347.33,
+        "quantity": 0.51,
+        "pips": 29.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 68,
+        "net": 67.87,
+        "gross": 70.91,
+        "entryTime": 1724032800000,
+        "closeTime": 1724046300000,
+        "entryPrice": 1.10321,
+        "closePrice": 1.10479,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10415.2,
+        "quantity": 0.51,
+        "pips": 15.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 70,
+        "net": 149.11,
+        "gross": 152.15,
+        "entryTime": 1724398800000,
+        "closeTime": 1724421900000,
+        "entryPrice": 1.11189,
+        "closePrice": 1.11528,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10564.31,
+        "quantity": 0.51,
+        "pips": 33.9
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 72,
+        "net": 5.04,
+        "gross": 8.08,
+        "entryTime": 1724422080000,
+        "closeTime": 1724422140000,
+        "entryPrice": 1.11483,
+        "closePrice": 1.11501,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10569.35,
+        "quantity": 0.51,
+        "pips": 1.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 74,
+        "net": -139.05,
+        "gross": -135.99,
+        "entryTime": 1724827140000,
+        "closeTime": 1724871600000,
+        "entryPrice": 1.1146,
+        "closePrice": 1.11157,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10430.3,
+        "quantity": 0.51,
+        "pips": -30.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 76,
+        "net": -10.22,
+        "gross": -7.18,
+        "entryTime": 1725458460000,
+        "closeTime": 1725476400000,
+        "entryPrice": 1.10776,
+        "closePrice": 1.1076,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10420.08,
+        "quantity": 0.51,
+        "pips": -1.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 78,
+        "net": 105.56,
+        "gross": 108.62,
+        "entryTime": 1725501600000,
+        "closeTime": 1725562800000,
+        "entryPrice": 1.10798,
+        "closePrice": 1.1104,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10525.64,
+        "quantity": 0.51,
+        "pips": 24.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 80,
+        "net": 10.42,
+        "gross": 13.46,
+        "entryTime": 1725642960000,
+        "closeTime": 1725649200000,
+        "entryPrice": 1.10832,
+        "closePrice": 1.10862,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10536.06,
+        "quantity": 0.51,
+        "pips": 3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 82,
+        "net": -183.92,
+        "gross": -180.88,
+        "entryTime": 1725847200000,
+        "closeTime": 1725908400000,
+        "entryPrice": 1.10832,
+        "closePrice": 1.10429,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10352.14,
+        "quantity": 0.51,
+        "pips": -40.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 84,
+        "net": 3.69,
+        "gross": 6.73,
+        "entryTime": 1726164960000,
+        "closeTime": 1726167600000,
+        "entryPrice": 1.10592,
+        "closePrice": 1.10607,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10355.83,
+        "quantity": 0.51,
+        "pips": 1.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 86,
+        "net": 348.39,
+        "gross": 351.43,
+        "entryTime": 1726711500000,
+        "closeTime": 1726772400000,
+        "entryPrice": 1.10871,
+        "closePrice": 1.11654,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10704.22,
+        "quantity": 0.51,
+        "pips": 78.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 88,
+        "net": 18.95,
+        "gross": 21.99,
+        "entryTime": 1726797600000,
+        "closeTime": 1726858800000,
+        "entryPrice": 1.11601,
+        "closePrice": 1.1165,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10723.17,
+        "quantity": 0.51,
+        "pips": 4.9
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 90,
+        "net": -347.74,
+        "gross": -344.7,
+        "entryTime": 1727056800000,
+        "closeTime": 1727079300000,
+        "entryPrice": 1.11599,
+        "closePrice": 1.10831,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10375.43,
+        "quantity": 0.51,
+        "pips": -76.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 92,
+        "net": 44.52,
+        "gross": 47.58,
+        "entryTime": 1727083200000,
+        "closeTime": 1727118000000,
+        "entryPrice": 1.11061,
+        "closePrice": 1.11167,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10419.95,
+        "quantity": 0.51,
+        "pips": 10.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 94,
+        "net": 256.38,
+        "gross": 259.42,
+        "entryTime": 1727143200000,
+        "closeTime": 1727204400000,
+        "entryPrice": 1.11084,
+        "closePrice": 1.11662,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10676.33,
+        "quantity": 0.51,
+        "pips": 57.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 96,
+        "net": 92.11,
+        "gross": 95.15,
+        "entryTime": 1727419560000,
+        "closeTime": 1727463600000,
+        "entryPrice": 1.11463,
+        "closePrice": 1.11675,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10768.44,
+        "quantity": 0.51,
+        "pips": 21.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 98,
+        "net": -309.59,
+        "gross": -306.55,
+        "entryTime": 1727686800000,
+        "closeTime": 1727711460000,
+        "entryPrice": 1.12067,
+        "closePrice": 1.11384,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10458.85,
+        "quantity": 0.51,
+        "pips": -68.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 100,
+        "net": 8.63,
+        "gross": 11.67,
+        "entryTime": 1728658800000,
+        "closeTime": 1728673200000,
+        "entryPrice": 1.09427,
+        "closePrice": 1.09401,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10467.48,
+        "quantity": 0.51,
+        "pips": 2.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 102,
+        "net": 49.9,
+        "gross": 52.96,
+        "entryTime": 1728871200000,
+        "closeTime": 1728906540000,
+        "entryPrice": 1.09233,
+        "closePrice": 1.09115,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10517.38,
+        "quantity": 0.51,
+        "pips": 11.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 104,
+        "net": 14.89,
+        "gross": 17.95,
+        "entryTime": 1728906660000,
+        "closeTime": 1728909540000,
+        "entryPrice": 1.09134,
+        "closePrice": 1.09094,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10532.27,
+        "quantity": 0.51,
+        "pips": 4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 106,
+        "net": 0.53,
+        "gross": 3.59,
+        "entryTime": 1728912120000,
+        "closeTime": 1728912480000,
+        "entryPrice": 1.0912,
+        "closePrice": 1.09112,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10532.8,
+        "quantity": 0.51,
+        "pips": 0.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 108,
+        "net": 31.48,
+        "gross": 35.01,
+        "entryTime": 1728913440000,
+        "closeTime": 1728950580000,
+        "entryPrice": 1.09161,
+        "closePrice": 1.09083,
+        "commissions": -3.06,
+        "swaps": -0.47,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10564.28,
+        "quantity": 0.51,
+        "pips": 7.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 110,
+        "net": -4.41,
+        "gross": -1.35,
+        "entryTime": 1728980040000,
+        "closeTime": 1728980820000,
+        "entryPrice": 1.09059,
+        "closePrice": 1.09062,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10559.87,
+        "quantity": 0.51,
+        "pips": -0.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 112,
+        "net": 27.48,
+        "gross": 30.52,
+        "entryTime": 1728981360000,
+        "closeTime": 1728991560000,
+        "entryPrice": 1.09059,
+        "closePrice": 1.08991,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10587.35,
+        "quantity": 0.51,
+        "pips": 6.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 114,
+        "net": 8.18,
+        "gross": 11.22,
+        "entryTime": 1728991860000,
+        "closeTime": 1728993420000,
+        "entryPrice": 1.09016,
+        "closePrice": 1.08991,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10595.53,
+        "quantity": 0.51,
+        "pips": 2.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 116,
+        "net": 71.89,
+        "gross": 75.4,
+        "entryTime": 1728993600000,
+        "closeTime": 1729036800000,
+        "entryPrice": 1.0901,
+        "closePrice": 1.08842,
+        "commissions": -3.04,
+        "swaps": -0.47,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10667.42,
+        "quantity": 0.51,
+        "pips": 16.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 118,
+        "net": 132.04,
+        "gross": 135.1,
+        "entryTime": 1729501440000,
+        "closeTime": 1729524420000,
+        "entryPrice": 1.08564,
+        "closePrice": 1.08263,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10799.46,
+        "quantity": 0.51,
+        "pips": 30.1
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 120,
+        "net": -2.16,
+        "gross": 0.9,
+        "entryTime": 1729562580000,
+        "closeTime": 1729563300000,
+        "entryPrice": 1.0821,
+        "closePrice": 1.08208,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10797.3,
+        "quantity": 0.51,
+        "pips": 0.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 122,
+        "net": 76.38,
+        "gross": 79.44,
+        "entryTime": 1729592880000,
+        "closeTime": 1729602180000,
+        "entryPrice": 1.0827,
+        "closePrice": 1.08093,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10873.68,
+        "quantity": 0.51,
+        "pips": 17.7
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 124,
+        "net": -117.96,
+        "gross": -114.9,
+        "entryTime": 1729782180000,
+        "closeTime": 1729796400000,
+        "entryPrice": 1.0798,
+        "closePrice": 1.08236,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10755.72,
+        "quantity": 0.51,
+        "pips": -25.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 126,
+        "net": 85.36,
+        "gross": 88.42,
+        "entryTime": 1729821600000,
+        "closeTime": 1729882800000,
+        "entryPrice": 1.08235,
+        "closePrice": 1.08038,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10841.08,
+        "quantity": 0.51,
+        "pips": 19.7
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 128,
+        "net": -99.56,
+        "gross": -96.5,
+        "entryTime": 1730080800000,
+        "closeTime": 1730142000000,
+        "entryPrice": 1.07911,
+        "closePrice": 1.08126,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10741.52,
+        "quantity": 0.51,
+        "pips": -21.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 130,
+        "net": -8.89,
+        "gross": -5.83,
+        "entryTime": 1730167200000,
+        "closeTime": 1730227440000,
+        "entryPrice": 1.08158,
+        "closePrice": 1.08171,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10732.63,
+        "quantity": 0.51,
+        "pips": -1.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 132,
+        "net": 3.67,
+        "gross": 6.73,
+        "entryTime": 1730227440000,
+        "closeTime": 1730228400000,
+        "entryPrice": 1.08159,
+        "closePrice": 1.08144,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10736.3,
+        "quantity": 0.51,
+        "pips": 1.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 134,
+        "net": -223.86,
+        "gross": -220.82,
+        "entryTime": 1730253600000,
+        "closeTime": 1730312220000,
+        "entryPrice": 1.08214,
+        "closePrice": 1.08706,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10512.44,
+        "quantity": 0.51,
+        "pips": -49.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 136,
+        "net": -123.33,
+        "gross": -120.29,
+        "entryTime": 1730340000000,
+        "closeTime": 1730401200000,
+        "entryPrice": 1.08447,
+        "closePrice": 1.08715,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10389.11,
+        "quantity": 0.51,
+        "pips": -26.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 138,
+        "net": 45.88,
+        "gross": 48.92,
+        "entryTime": 1730473320000,
+        "closeTime": 1730487600000,
+        "entryPrice": 1.08511,
+        "closePrice": 1.08402,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10434.99,
+        "quantity": 0.51,
+        "pips": 10.9
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 140,
+        "net": 569.19,
+        "gross": 572.25,
+        "entryTime": 1730858400000,
+        "closeTime": 1730875260000,
+        "entryPrice": 1.08364,
+        "closePrice": 1.07089,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11004.18,
+        "quantity": 0.51,
+        "pips": 127.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 142,
+        "net": 235.29,
+        "gross": 238.33,
+        "entryTime": 1731297600000,
+        "closeTime": 1731323220000,
+        "entryPrice": 1.07168,
+        "closePrice": 1.06637,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11239.47,
+        "quantity": 0.51,
+        "pips": 53.1
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 144,
+        "net": -290.29,
+        "gross": -287.25,
+        "entryTime": 1731902400000,
+        "closeTime": 1731956400000,
+        "entryPrice": 1.05342,
+        "closePrice": 1.05982,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10949.18,
+        "quantity": 0.51,
+        "pips": -64
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 146,
+        "net": 6.39,
+        "gross": 9.43,
+        "entryTime": 1731981600000,
+        "closeTime": 1732042800000,
+        "entryPrice": 1.0593,
+        "closePrice": 1.05909,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 10955.57,
+        "quantity": 0.51,
+        "pips": 2.1
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 148,
+        "net": 281.07,
+        "gross": 284.11,
+        "entryTime": 1732068000000,
+        "closeTime": 1732129200000,
+        "entryPrice": 1.06002,
+        "closePrice": 1.05369,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11236.64,
+        "quantity": 0.51,
+        "pips": 63.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 150,
+        "net": 260.87,
+        "gross": 263.91,
+        "entryTime": 1732154400000,
+        "closeTime": 1732215600000,
+        "entryPrice": 1.05458,
+        "closePrice": 1.0487,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11497.51,
+        "quantity": 0.51,
+        "pips": 58.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 152,
+        "net": 114.1,
+        "gross": 117.14,
+        "entryTime": 1732611360000,
+        "closeTime": 1732647600000,
+        "entryPrice": 1.04931,
+        "closePrice": 1.0467,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11611.61,
+        "quantity": 0.51,
+        "pips": 26.1
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 154,
+        "net": -364.34,
+        "gross": -361.3,
+        "entryTime": 1732672800000,
+        "closeTime": 1732734000000,
+        "entryPrice": 1.04868,
+        "closePrice": 1.05673,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11247.27,
+        "quantity": 0.51,
+        "pips": -80.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 156,
+        "net": -17.4,
+        "gross": -14.36,
+        "entryTime": 1732766400000,
+        "closeTime": 1732820400000,
+        "entryPrice": 1.05531,
+        "closePrice": 1.05563,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11229.87,
+        "quantity": 0.51,
+        "pips": -3.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 158,
+        "net": 143.73,
+        "gross": 146.77,
+        "entryTime": 1733112000000,
+        "closeTime": 1733166000000,
+        "entryPrice": 1.05234,
+        "closePrice": 1.04907,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11373.6,
+        "quantity": 0.51,
+        "pips": 32.7
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 160,
+        "net": -108.51,
+        "gross": -105.47,
+        "entryTime": 1733716320000,
+        "closeTime": 1733770800000,
+        "entryPrice": 1.05408,
+        "closePrice": 1.05643,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11265.09,
+        "quantity": 0.51,
+        "pips": -23.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 162,
+        "net": 92.99,
+        "gross": 96.05,
+        "entryTime": 1733817420000,
+        "closeTime": 1733857200000,
+        "entryPrice": 1.05479,
+        "closePrice": 1.05265,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11358.08,
+        "quantity": 0.51,
+        "pips": 21.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 164,
+        "net": 217.78,
+        "gross": 220.82,
+        "entryTime": 1733882400000,
+        "closeTime": 1733943600000,
+        "entryPrice": 1.05346,
+        "closePrice": 1.04854,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11575.86,
+        "quantity": 0.51,
+        "pips": 49.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 166,
+        "net": -82.93,
+        "gross": -79.89,
+        "entryTime": 1734083760000,
+        "closeTime": 1734116400000,
+        "entryPrice": 1.04791,
+        "closePrice": 1.04969,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11492.93,
+        "quantity": 0.51,
+        "pips": -17.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "buy",
+        "id": 168,
+        "net": 77.75,
+        "gross": 80.79,
+        "entryTime": 1738288800000,
+        "closeTime": 1738350000000,
+        "entryPrice": 1.03887,
+        "closePrice": 1.03707,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11570.68,
+        "quantity": 0.51,
+        "pips": 18
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 170,
+        "net": -129.61,
+        "gross": -126.57,
+        "entryTime": 1740535200000,
+        "closeTime": 1740596400000,
+        "entryPrice": 1.05164,
+        "closePrice": 1.04882,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11441.07,
+        "quantity": 0.51,
+        "pips": -28.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 172,
+        "net": -310.51,
+        "gross": -307.45,
+        "entryTime": 1740621600000,
+        "closeTime": 1740669060000,
+        "entryPrice": 1.04793,
+        "closePrice": 1.04108,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11130.56,
+        "quantity": 0.51,
+        "pips": -68.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 174,
+        "net": 119.49,
+        "gross": 122.53,
+        "entryTime": 1741597200000,
+        "closeTime": 1741598580000,
+        "entryPrice": 1.08108,
+        "closePrice": 1.08381,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11250.05,
+        "quantity": 0.51,
+        "pips": 27.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 176,
+        "net": 16.71,
+        "gross": 19.75,
+        "entryTime": 1741604700000,
+        "closeTime": 1741604880000,
+        "entryPrice": 1.08314,
+        "closePrice": 1.08358,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11266.76,
+        "quantity": 0.51,
+        "pips": 4.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 178,
+        "net": 4.14,
+        "gross": 7.18,
+        "entryTime": 1741615380000,
+        "closeTime": 1741615560000,
+        "entryPrice": 1.08335,
+        "closePrice": 1.08351,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11270.9,
+        "quantity": 0.51,
+        "pips": 1.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 180,
+        "net": 94.61,
+        "gross": 108.62,
+        "entryTime": 1741617360000,
+        "closeTime": 1741658340000,
+        "entryPrice": 1.08341,
+        "closePrice": 1.08583,
+        "commissions": -3.04,
+        "swaps": -10.97,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11365.51,
+        "quantity": 0.51,
+        "pips": 24.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 182,
+        "net": 0.55,
+        "gross": 3.59,
+        "entryTime": 1741658520000,
+        "closeTime": 1741658880000,
+        "entryPrice": 1.08573,
+        "closePrice": 1.08581,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11366.06,
+        "quantity": 0.51,
+        "pips": 0.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 184,
+        "net": 4.14,
+        "gross": 7.18,
+        "entryTime": 1741659720000,
+        "closeTime": 1741661880000,
+        "entryPrice": 1.08565,
+        "closePrice": 1.08581,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11370.2,
+        "quantity": 0.51,
+        "pips": 1.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 186,
+        "net": 8.63,
+        "gross": 11.67,
+        "entryTime": 1741662000000,
+        "closeTime": 1741662720000,
+        "entryPrice": 1.0857,
+        "closePrice": 1.08596,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11378.83,
+        "quantity": 0.51,
+        "pips": 2.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 188,
+        "net": 248.08,
+        "gross": 262.11,
+        "entryTime": 1741662960000,
+        "closeTime": 1741737600000,
+        "entryPrice": 1.08557,
+        "closePrice": 1.09141,
+        "commissions": -3.06,
+        "swaps": -10.97,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11626.91,
+        "quantity": 0.51,
+        "pips": 58.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 190,
+        "net": -59.59,
+        "gross": -56.55,
+        "entryTime": 1741878000000,
+        "closeTime": 1741892400000,
+        "entryPrice": 1.08662,
+        "closePrice": 1.08536,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11567.32,
+        "quantity": 0.51,
+        "pips": -12.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 192,
+        "net": 154.05,
+        "gross": 157.09,
+        "entryTime": 1741923420000,
+        "closeTime": 1741978800000,
+        "entryPrice": 1.08451,
+        "closePrice": 1.08801,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11721.37,
+        "quantity": 0.51,
+        "pips": 35
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 194,
+        "net": 183.2,
+        "gross": 186.26,
+        "entryTime": 1742176800000,
+        "closeTime": 1742238000000,
+        "entryPrice": 1.08838,
+        "closePrice": 1.09253,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11904.57,
+        "quantity": 0.51,
+        "pips": 41.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 196,
+        "net": 125.32,
+        "gross": 128.36,
+        "entryTime": 1742263200000,
+        "closeTime": 1742324400000,
+        "entryPrice": 1.09149,
+        "closePrice": 1.09435,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12029.89,
+        "quantity": 0.51,
+        "pips": 28.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 198,
+        "net": 20.73,
+        "gross": 23.79,
+        "entryTime": 1742376300000,
+        "closeTime": 1742410800000,
+        "entryPrice": 1.09021,
+        "closePrice": 1.09074,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12050.62,
+        "quantity": 0.51,
+        "pips": 5.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 200,
+        "net": -327.54,
+        "gross": -324.5,
+        "entryTime": 1742436000000,
+        "closeTime": 1742465880000,
+        "entryPrice": 1.09069,
+        "closePrice": 1.08346,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11723.08,
+        "quantity": 0.51,
+        "pips": -72.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 202,
+        "net": 33.31,
+        "gross": 36.35,
+        "entryTime": 1742466120000,
+        "closeTime": 1742497200000,
+        "entryPrice": 1.08404,
+        "closePrice": 1.08485,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11756.39,
+        "quantity": 0.51,
+        "pips": 8.1
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 204,
+        "net": -94.6,
+        "gross": -91.56,
+        "entryTime": 1742898420000,
+        "closeTime": 1742929200000,
+        "entryPrice": 1.08191,
+        "closePrice": 1.07987,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11661.79,
+        "quantity": 0.51,
+        "pips": -20.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 206,
+        "net": -88.32,
+        "gross": -85.28,
+        "entryTime": 1743089580000,
+        "closeTime": 1743102000000,
+        "entryPrice": 1.081,
+        "closePrice": 1.0791,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11573.47,
+        "quantity": 0.51,
+        "pips": -19
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 208,
+        "net": 75.48,
+        "gross": 78.54,
+        "entryTime": 1743168060000,
+        "closeTime": 1743188400000,
+        "entryPrice": 1.08071,
+        "closePrice": 1.08246,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11648.95,
+        "quantity": 0.51,
+        "pips": 17.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 210,
+        "net": -87.44,
+        "gross": -84.38,
+        "entryTime": 1743386400000,
+        "closeTime": 1743447600000,
+        "entryPrice": 1.08336,
+        "closePrice": 1.08148,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11561.51,
+        "quantity": 0.51,
+        "pips": -18.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 212,
+        "net": -158.33,
+        "gross": -155.29,
+        "entryTime": 1743472800000,
+        "closeTime": 1743534000000,
+        "entryPrice": 1.08217,
+        "closePrice": 1.07871,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11403.18,
+        "quantity": 0.51,
+        "pips": -34.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 214,
+        "net": 193.55,
+        "gross": 196.59,
+        "entryTime": 1743596940000,
+        "closeTime": 1743620400000,
+        "entryPrice": 1.08105,
+        "closePrice": 1.08543,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11596.73,
+        "quantity": 0.51,
+        "pips": 43.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 216,
+        "net": 85.81,
+        "gross": 88.87,
+        "entryTime": 1743645600000,
+        "closeTime": 1743657840000,
+        "entryPrice": 1.09142,
+        "closePrice": 1.0934,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11682.54,
+        "quantity": 0.51,
+        "pips": 19.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 218,
+        "net": 43.62,
+        "gross": 46.68,
+        "entryTime": 1744038000000,
+        "closeTime": 1744052400000,
+        "entryPrice": 1.09228,
+        "closePrice": 1.09332,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11726.16,
+        "quantity": 0.51,
+        "pips": 10.4
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 220,
+        "net": -41.64,
+        "gross": -38.6,
+        "entryTime": 1744077600000,
+        "closeTime": 1744138800000,
+        "entryPrice": 1.09607,
+        "closePrice": 1.09521,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11684.52,
+        "quantity": 0.51,
+        "pips": -8.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 222,
+        "net": -263.36,
+        "gross": -260.32,
+        "entryTime": 1744164000000,
+        "closeTime": 1744225200000,
+        "entryPrice": 1.10218,
+        "closePrice": 1.09638,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 11421.16,
+        "quantity": 0.51,
+        "pips": -58
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 224,
+        "net": 1193.08,
+        "gross": 1196.12,
+        "entryTime": 1744250400000,
+        "closeTime": 1744309500000,
+        "entryPrice": 1.09729,
+        "closePrice": 1.12394,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12614.24,
+        "quantity": 0.51,
+        "pips": 266.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 226,
+        "net": -257.52,
+        "gross": -254.48,
+        "entryTime": 1744729200000,
+        "closeTime": 1744743600000,
+        "entryPrice": 1.13301,
+        "closePrice": 1.12734,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12356.72,
+        "quantity": 0.51,
+        "pips": -56.7
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 228,
+        "net": 269.85,
+        "gross": 272.89,
+        "entryTime": 1744768800000,
+        "closeTime": 1744830000000,
+        "entryPrice": 1.13252,
+        "closePrice": 1.1386,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12626.57,
+        "quantity": 0.51,
+        "pips": 60.8
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 230,
+        "net": 26.58,
+        "gross": 29.62,
+        "entryTime": 1744855200000,
+        "closeTime": 1744916400000,
+        "entryPrice": 1.13665,
+        "closePrice": 1.13731,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12653.15,
+        "quantity": 0.51,
+        "pips": 6.6
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 232,
+        "net": 92.56,
+        "gross": 95.6,
+        "entryTime": 1744941600000,
+        "closeTime": 1745002800000,
+        "entryPrice": 1.13721,
+        "closePrice": 1.13934,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12745.71,
+        "quantity": 0.51,
+        "pips": 21.3
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 234,
+        "net": 42.74,
+        "gross": 45.78,
+        "entryTime": 1745593200000,
+        "closeTime": 1745607600000,
+        "entryPrice": 1.13695,
+        "closePrice": 1.13797,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 12788.45,
+        "quantity": 0.51,
+        "pips": 10.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 236,
+        "net": 272.97,
+        "gross": 276.03,
+        "entryTime": 1745805600000,
+        "closeTime": 1745866800000,
+        "entryPrice": 1.13521,
+        "closePrice": 1.14136,
+        "commissions": -3.06,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 13061.42,
+        "quantity": 0.51,
+        "pips": 61.5
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 238,
+        "net": -53.31,
+        "gross": -50.27,
+        "entryTime": 1745892000000,
+        "closeTime": 1745953200000,
+        "entryPrice": 1.13934,
+        "closePrice": 1.13822,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 13008.11,
+        "quantity": 0.51,
+        "pips": -11.2
+      },
+      {
+        "symbol": "EURUSD",
+        "direction": "sell",
+        "id": 240,
+        "net": 72.81,
+        "gross": 75.85,
+        "entryTime": 1747990800000,
+        "closeTime": 1748026800000,
+        "entryPrice": 1.1343,
+        "closePrice": 1.13599,
+        "commissions": -3.04,
+        "swaps": 0,
+        "volume": 51000,
+        "label": "HybridTrend_EURUSD_Hour6",
+        "comment": null,
+        "balance": 13080.92,
+        "quantity": 0.51,
+        "pips": 16.9
+      }
+    ]
+  }
+}</script>
+        <!-- endBacktestingReport -->
+    </head>
+    <body>
+        <div class="spinner-a spinner-b spinner-c spinner-d spinner-e spinner-f spinner-g spinner-h spinner-i spinner-j spinner-k spinner-l spinner-m spinner-n spinner-o spinner-p spinner-q spinner-r spinner-s spinner-t spinner-u spinner-v spinner-w spinner-x spinner-y spinner-z spinner-ab spinner-ac spinner-ae spinner-af spinner-ag spinner-ah spinner-ai spinner-aj spinner-ak spinner-al spinner-am spinner-an spinner-ao spinner-ap spinner-aq spinner-ar spinner-as spinner-at spinner-au spinner-av spinner-aw spinner-ax spinner-ay spinner-az spinner-ba spinner-bb spinner-bc spinner-bd spinner-be spinner-bf spinner-bg waitingIndicator" data-test-id="loader"></div>
+        <div id="root"></div>
+
+            <script id="init" defer src="https://backtesting.ctrader.com/v5.0.0/bundle/index-31bd62a5e13b796fd66a.js"></script>
+
+        <script type="text/javascript" id="app-init">
+            var script = document.getElementById('init');
+            script.onload = () => {
+                initApp('root');
+
+                script.remove();
+                document.getElementById('app-init').remove();
+            }
+        </script>
+    </body>
+</html>

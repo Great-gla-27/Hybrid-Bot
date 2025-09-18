@@ -15,7 +15,7 @@ The bot implements a hybrid trend-following strategy with **dynamic risk managem
 
 ---
 
-## 🚀 Features
+## Features
 - **Dynamic Position Sizing**  
   Calculates trade volume automatically based on account equity, ATR stop-loss, and broker limits.
 

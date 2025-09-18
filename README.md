@@ -41,4 +41,5 @@ The bot implements a hybrid trend-following strategy with **dynamic risk managem
 ## Demo Instructions
 1. Clone the repo:
    ```bash
-   git clone https://github.com/<your-username>/HybridTrendBot.git
+   git clone https://github.com/Great-gla-27/Hybrid-Bot.git
+

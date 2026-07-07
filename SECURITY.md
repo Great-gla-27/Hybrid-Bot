@@ -9,7 +9,7 @@ This repository contains research and educational code for an automated trading 
 
 **Good Practices:**
 - Never commit or share API keys, broker logins, or account numbers in code.
-- Store any credentials in a local `.env` or config file excluded via `.gitignore`.
+- cTrader ID passwords are read from a plain text file mounted into the Docker container at runtime (see README) - never bake credentials into the image or the Dockerfile.
 - Only use open, publicly available datasets. Proprietary or paid datasets should not be uploaded here.
 
 **Disclaimer:**

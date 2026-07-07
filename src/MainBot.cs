@@ -344,12 +344,16 @@ namespace cAlgo.Robots
         {
             var closed = args.Position;
             if (closed.Label != Label) return;
-            var closingDeal = closed.Deals.Last(d => d.PositionImpact == DealPositionImpact.Closing);
-            double closePrice = closingDeal.ExecutionPrice ?? closed.CurrentPrice;
+
+            var historicalTrade = History.FindLast(closed.Label, closed.SymbolName, closed.TradeType);
+            double closePrice = historicalTrade != null ? historicalTrade.ClosingPrice : closed.EntryPrice;
+
             Print($"CLOSED: {closed.TradeType} {Symbol.VolumeInUnitsToQuantity(closed.VolumeInUnits):F2} lots ({closed.VolumeInUnits}u) {closed.SymbolName} | " +
-                  $"Entry: {closed.EntryPrice:F5} | Close: {closePrice:F5} | Pips: {closed.Pips:F1} | PnL: {closed.NetProfit:F2} | Reason: {args.Reason}");
+                $"Entry: {closed.EntryPrice:F5} | Close: {closePrice:F5} | Pips: {closed.Pips:F1} | PnL: {closed.NetProfit:F2} | Reason: {args.Reason}");
+
             if (args.Reason != PositionCloseReason.StopOut)
                 _pnlToday += closed.NetProfit;
+
             if (Positions.Find(Label) == null)
                 ResetTradeStateFlags();
         }

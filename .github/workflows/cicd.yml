@@ -17,11 +17,13 @@ jobs:
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '6.0.x'
 
     - name: Restore Dependencies
       run: dotnet restore src/MainBot.csproj
 
     - name: Compile Application
       run: dotnet build src/MainBot.csproj --configuration Release --no-restore
-      
+
+    - name: Build Docker Image
+      run: docker build -t hybrid-bot .
